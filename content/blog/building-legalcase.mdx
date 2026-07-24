@@ -1,0 +1,50 @@
+---
+title: "Building LegalCase: A SaaS Platform for Ethiopian Law Firms"
+summary: "How I designed and built a full-stack SaaS product combining a Flutter mobile app, Node.js API, and React admin panel — with exact alarm notifications, Chapa payments, and bilingual support."
+publishedAt: "2024-07-15"
+tags: ["flutter", "nodejs", "saas", "fullstack"]
+draft: false
+---
+
+## Overview
+
+LegalCase is a legal practice management platform I built for Ethiopian law firms. It combines three
+independent packages — a Flutter mobile app, a Node.js/TypeScript REST API, and a React admin panel —
+into one cohesive SaaS product.
+
+## The Problem
+
+Ethiopian law firms were tracking cases in spreadsheets and missing hearing dates. The mobile-first
+culture meant a web-only tool wasn't going to cut it.
+
+## Architecture
+
+The system is a monorepo with three packages sharing a consistent REST contract:
+
+- `/api` — Node.js + Express + PostgreSQL (18 migrations, 40+ endpoints)
+- `/mobile` — Flutter with Riverpod state management and go_router
+- `/admin` — React + Vite for firm management, billing, and audit logs
+
+## Key Technical Challenge: Alarm-Style Notifications
+
+The hardest part was making hearing reminders fire reliably even when the app was killed. The solution:
+
+1. `USE_EXACT_ALARM` permission on Android 12+
+2. `BOOT_COMPLETED` broadcast receiver to reschedule alarms after device restart
+3. `flutter_local_notifications` with exact timing
+
+This combination ensures a lawyer's 9 AM court hearing reminder fires regardless of battery
+optimisation or app state.
+
+## Subscription System
+
+The backend uses Express middleware to validate subscription status on every protected route. When a
+trial expires, the API returns `402 Payment Required`, which triggers the Flutter paywall screen.
+Chapa (Ethiopia's leading payment gateway) handles checkout.
+
+## Lessons Learned
+
+- Design the subscription guard as middleware, not as a cron job. Middleware is synchronous with
+  the request — no race conditions.
+- Test exact alarms on physical devices, not emulators.
+- Build bilingual from day one (English + Amharic). Retrofitting i18n is painful.
