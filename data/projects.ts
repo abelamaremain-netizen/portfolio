@@ -13,28 +13,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'legalcase',
-    title: 'LegalCase',
-    description:
-      'Full-stack SaaS platform for Ethiopian law firms — combines a Flutter mobile app, ' +
-      'Node.js/TypeScript REST API, and a React admin panel into one cohesive product.',
-    techStack: [
-      'Flutter', 'Dart', 'Node.js', 'TypeScript', 'Express',
-      'PostgreSQL', 'Knex.js', 'React', 'Vite', 'JWT', 'Docker',
-      'GitHub Actions', 'Chapa',
-    ],
-    imageUrl: '/images/projects/legalcase.png',
-    featured: true,
-    tags: ['mobile', 'backend', 'saas', 'fintech', 'fullstack'],
-    highlights: [
-      '40+ REST API endpoints with role-based access & subscription guard middleware',
-      'Alarm-style hearing notifications that survive app kill and device reboot (USE_EXACT_ALARM + BOOT_COMPLETED)',
-      'Chapa payment gateway integration with free-trial enforcement and 402 paywall',
-      'Bilingual UI — English & Amharic (አማርኛ)',
-      '18 database migrations · 15+ mobile screens · monorepo architecture',
-    ],
-  },
-  {
     id: 'cooperative-mgmt',
     title: 'Cooperative Management System',
     description:

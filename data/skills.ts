@@ -11,13 +11,6 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    name: 'Mobile',
-    skills: [
-      { name: 'Flutter', level: 'expert' },
-      { name: 'Dart', level: 'expert' },
-    ],
-  },
-  {
     name: 'Frontend',
     skills: [
       { name: 'Next.js', level: 'expert' },
@@ -31,8 +24,6 @@ export const skillCategories: SkillCategory[] = [
   {
     name: 'Backend',
     skills: [
-      { name: 'Node.js', level: 'expert' },
-      { name: 'Express', level: 'expert' },
       { name: 'Java 17', level: 'advanced' },
       { name: 'Spring Boot 3', level: 'advanced' },
       { name: 'Spring Security', level: 'advanced' },
@@ -42,7 +33,6 @@ export const skillCategories: SkillCategory[] = [
     name: 'Databases',
     skills: [
       { name: 'PostgreSQL', level: 'expert' },
-      { name: 'Knex.js', level: 'advanced' },
       { name: 'Spring Data JPA', level: 'advanced' },
       { name: 'Flyway', level: 'advanced' },
     ],
@@ -50,17 +40,13 @@ export const skillCategories: SkillCategory[] = [
   {
     name: 'DevOps & Tools',
     skills: [
-      { name: 'Docker', level: 'advanced' },
-      { name: 'Docker Compose', level: 'advanced' },
-      { name: 'GitHub Actions', level: 'advanced' },
       { name: 'Maven', level: 'intermediate' },
       { name: 'Git', level: 'expert' },
     ],
   },
   {
-    name: 'Payments & APIs',
+    name: 'APIs & Auth',
     skills: [
-      { name: 'Chapa', level: 'advanced' },
       { name: 'JWT', level: 'expert' },
       { name: 'REST APIs', level: 'expert' },
     ],
@@ -69,7 +55,6 @@ export const skillCategories: SkillCategory[] = [
     name: 'Languages',
     skills: [
       { name: 'TypeScript', level: 'expert' },
-      { name: 'Dart', level: 'expert' },
       { name: 'Java', level: 'advanced' },
       { name: 'JavaScript', level: 'expert' },
     ],
