@@ -10,7 +10,7 @@ export interface SiteMetadata {
 export const siteMetadata: SiteMetadata = {
   title: 'Abel Amare — Full-Stack Software Engineer',
   description:
-    'Portfolio of Abel Amare, a recent Software Engineering graduate specialising in Flutter, Node.js, Java Spring Boot, and Next.js. Open to backend, full-stack, and mobile roles.',
+    'Portfolio of Abel Amare, a recent Software Engineering graduate specialising in Java Spring Boot, Node.js, and Next.js. Open to backend and full-stack roles.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://portfolio-chi-rust-93.vercel.app',
   ogImage: '/images/og-default.png',
   twitterHandle: '@abelamare',

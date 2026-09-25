@@ -20,7 +20,7 @@ export async function sendContactEmail(
 
     await resend.emails.send({
       from: 'portfolio@abelamare.dev',
-      to: 'abel@abelamare.dev',
+      to: 'abelamaremain@gmail.com',
       subject: payload.subject ?? `Portfolio contact from ${payload.name}`,
       text: `Name: ${payload.name}\nEmail: ${payload.email}\n\n${payload.message}`,
       html: `

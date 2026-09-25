@@ -26,20 +26,6 @@ export const experiences: WorkExperience[] = [
       'Integrated MinIO object storage with presigned URL generation for collateral files, member KYC documents, and loan agreements.',
       'Delivered paginated financial reports with real-time PostgreSQL aggregation — ~25 REST controllers, 24 Flyway migrations, ~40 frontend pages.',
     ],
-    technologies: ['Java 17', 'Spring Boot 3', 'Spring Security', 'JWT', 'Spring Data JPA', 'PostgreSQL', 'Flyway', 'Next.js 14', 'TypeScript', 'Redux Toolkit', 'MinIO'],
-  },
-  {
-    id: 'exp-legalcase',
-    role: 'Independent Software Developer',
-    company: 'Personal Project',
-    location: 'Woldia, Ethiopia',
-    startDate: '2023-01-01',
-    description: [
-      'Designed and built LegalCase — a full-stack SaaS platform for Ethiopian law firms combining a Flutter mobile app, Node.js REST API, and React admin panel.',
-      'Implemented alarm-style hearing notifications using flutter_local_notifications with USE_EXACT_ALARM + BOOT_COMPLETED receiver, ensuring reminders fire even when the app is killed.',
-      'Integrated Chapa (Ethiopian payment gateway) with free-trial enforcement and a subscription guard middleware that returns 402 to trigger the mobile paywall.',
-      'Delivered bilingual UI (English & Amharic), dark mode, and a monorepo architecture with a GitHub Actions CI pipeline.',
-    ],
-    technologies: ['Flutter', 'Dart', 'Node.js', 'TypeScript', 'Express', 'PostgreSQL', 'Knex.js', 'React', 'Docker', 'GitHub Actions', 'Chapa'],
+    technologies: ['Java 17', 'Spring Boot 3', 'Spring Security', 'JWT', 'Spring Data JPA', 'PostgreSQL', 'Flyway', 'Next.js 14', 'TypeScript', 'MinIO'],
   },
 ]

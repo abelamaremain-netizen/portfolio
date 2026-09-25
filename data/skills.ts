@@ -11,22 +11,22 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
+    name: 'Backend',
+    skills: [
+      { name: 'Node.js', level: 'expert' },
+      { name: 'Express', level: 'expert' },
+      { name: 'Java 17', level: 'advanced' },
+      { name: 'Spring Boot 3', level: 'advanced' },
+      { name: 'Spring Security', level: 'advanced' },
+    ],
+  },
+  {
     name: 'Frontend',
     skills: [
       { name: 'Next.js', level: 'expert' },
       { name: 'React', level: 'expert' },
       { name: 'TypeScript', level: 'expert' },
       { name: 'Tailwind CSS', level: 'advanced' },
-      { name: 'Redux Toolkit', level: 'advanced' },
-      { name: 'Framer Motion', level: 'intermediate' },
-    ],
-  },
-  {
-    name: 'Backend',
-    skills: [
-      { name: 'Java 17', level: 'advanced' },
-      { name: 'Spring Boot 3', level: 'advanced' },
-      { name: 'Spring Security', level: 'advanced' },
     ],
   },
   {

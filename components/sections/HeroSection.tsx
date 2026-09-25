@@ -55,8 +55,8 @@ export function HeroSection() {
               className="text-muted-foreground max-w-lg mx-auto lg:mx-0 mb-8 leading-relaxed"
             >
               Recent Software Engineering graduate from Woldia University. I build end-to-end
-              products — Flutter mobile apps, Spring Boot APIs, and Next.js web apps. Open to
-              backend, full-stack, or mobile roles.
+              products — Spring Boot APIs, Next.js web apps, and Node.js services. Open to
+              backend or full-stack roles.
             </motion.p>
 
             {/* CTA buttons */}

@@ -20,14 +20,13 @@ export function AboutSection() {
               with hands-on experience building production-ready, full-stack systems from scratch.
             </p>
             <p>
-              During my studies I shipped two complete projects: LegalCase — a SaaS legal practice
-              management platform for Ethiopian law firms (Flutter + Node.js + React + Chapa
-              payments), and a Cooperative Management System that replaced paper-based processes
-              for a savings &amp; credit cooperative (Spring Boot + Next.js + PostgreSQL).
+              During my studies I shipped a complete Cooperative Management System — a full-stack
+              platform that replaced paper-based processes for a savings &amp; credit cooperative,
+              built with Spring Boot, Next.js, and PostgreSQL.
             </p>
             <p>
               I care about clean architecture, real-world correctness, and software that actually
-              solves the problem at hand. Currently open to backend, full-stack, or mobile roles.
+              solves the problem at hand. Currently open to backend or full-stack roles.
             </p>
           </div>
         </motion.div>
