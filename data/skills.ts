@@ -27,6 +27,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'React', level: 'expert' },
       { name: 'TypeScript', level: 'expert' },
       { name: 'Tailwind CSS', level: 'advanced' },
+      { name: 'Framer Motion', level: 'intermediate' },
     ],
   },
   {
